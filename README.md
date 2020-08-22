@@ -36,13 +36,16 @@ You will need to save this file as "SigonyMapAdditions.js", or it will not work.
 # Potential Use Cases
 
 Map instances (i.e. mystery dungeon)
+
 Powerful when used with Shaz's Tile Changer.
+
 Plugin creators who would like to generate new maps in-game may find that this plugin saves them lots of work.
 
 
 # Features
 
 Copy a map using a plugin command.
+
 Delete a map using a plugin command (mainly if you want to clean up instances)
 
 
@@ -53,12 +56,18 @@ Delete a map using a plugin command (mainly if you want to clean up instances)
 > CopyMap mapId "mapName" variableForNewMapId parentId
 
 mapId - this is the ID of the map that you wish to copy. A new map, with a different ID, will be created.
+
 mapName - this is the name that appears in the editor, and is also the display name.
+
 variableForNewMapId - this is the $gameVariable that will store the newly copied map's ID.
-Once you copy the map, you might like to go to it, and so you can do this using events.
-Event > Transfer Player > Designation with variables. (You will need to set some temporary values for x and y coord)
-You do not need an endless list of variables to hold the mapIDs of every new map that you create in-game. You can be clever and juggle them a bit. To get you started look at: Event > Control Variables > GameData > MapID. The fact that the current map's ID is accessible allows you to store the ID of a map when you leave it. You can have a previousMap variable for example.
-Make sure to keep track of if a mapID actually exists and know where it leads at any moment. When a map is deleted, and another created, the mapID will be re-used, and this might create some headaches for you if you aren't careful.
+  Once you copy the map, you might like to go to it, and so you can do this using events.
+  
+  Event > Transfer Player > Designation with variables. (You will need to set some temporary values for x and y coord)
+  
+  You do not need an endless list of variables to hold the mapIDs of every new map that you create in-game. You can be clever and juggle them a bit. To get you started look at:    Event > Control Variables > GameData > MapID. The fact that the current map's ID is accessible allows you to store the ID of a map when you leave it. You can have a previousMap variable for example.
+
+  Make sure to keep track of if a mapID actually exists and know where it leads at any moment. When a map is deleted, and another created, the mapID will be re-used, and this might create some headaches for you if you aren't careful.
+
 parentId - this allows you to make the generated map a child of the map with this parent ID, making it indented and able to be hidden with a spoiler in the editor, the purpose of which is to help reduce clutter in the editor and for you to organize the potentially large amount of maps you'll be dealing with. If you do not desire the copied map to be foldable, set the parentId to 0.
 
 Example: 
