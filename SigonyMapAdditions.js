@@ -92,9 +92,9 @@ License
 
 Credit me where applicable in your derivative works.
 
-Redistribute by linking to this page.
+Redistribute by linking to official pages.
 
-Commercial use requires payment.
+Free for commercial and non-commercial use.
  */
 
 (async function() {
