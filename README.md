@@ -122,7 +122,7 @@ Credit me where applicable in your derivative works.
 
 Redistribute by linking to this page.
 
-Commercial use requires payment.
+Free for commercial use.
 
 Free for non-commercial and personal use.
 
